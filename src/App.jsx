@@ -9,6 +9,7 @@ import Highlights from "./components/Highlights";
 
 import { ScrollTrigger, SplitText } from "gsap/all";
 import gsap from "gsap";
+import Footer from "./components/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,6 +23,7 @@ const App = () => {
       <Performance />
       <Features />
       <Highlights />
+      <Footer/>
     </main>
   );
 };
