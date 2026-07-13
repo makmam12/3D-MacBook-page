@@ -1,3 +1,4 @@
+import { texture } from "three/tsl";
 import { create } from "zustand";
 
 const useMackbookStore = create((set) => ({
@@ -7,7 +8,10 @@ const useMackbookStore = create((set) => ({
     scale: 0.08, 
     setScale: (scale) => set({scale}), 
 
-    reset: () => set({color: "#2e2c2e", sclae: 0.08 }),
+    texture: '/videos/feature-1.mp4',
+    setTexture: (texture) => set({texture}),
+
+    reset: () => set({color: "#2e2c2e", sclae: 0.08, texture:  '/videos/feature-1.mp4'}),
 }));
 
 export default useMackbookStore;
